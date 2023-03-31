@@ -85,3 +85,6 @@
     [`(,e ,rest)
      (displayln (val rho e))
      (run-program rho rest)]))
+
+(define (norm rho e)
+  (read-back '() (val rho e)))
